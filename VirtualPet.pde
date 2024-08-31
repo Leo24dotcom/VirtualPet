@@ -5,7 +5,14 @@ size(400,400);
 }
 void draw(){
   //more of your code here
- stroke(1);
+void setup()
+{
+  size(400,400); 
+}
+
+void draw()
+{
+  stroke(1);
   //head
   fill(10,176,250);
   ellipse(200,100,200,200);
@@ -69,8 +76,15 @@ void draw(){
   vertex(140,230);
   vertex(150,210);
   endShape();
+  beginShape();
+  vertex(250,190);
+  vertex(280,220);
+  vertex(270,230);
+  vertex(250,210);
+  endShape();
   fill(255,255,255);
   ellipse(130,220,30,30);
+  ellipse(270,220,30,30);
   //feet
   fill(255,255,255);
   ellipse(165,315,60,30);
@@ -79,6 +93,8 @@ void draw(){
   fill(10,176,250);
   rect(150,290,40,20);
   rect(210,290,40,20);
+  
+}
 
 }
 
